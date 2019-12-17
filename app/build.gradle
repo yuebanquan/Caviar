@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.terminal_work"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    //第三方饼状图库
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //这是一款仿iOS的PickerView控件，有时间选择器和选项选择器
+    implementation 'com.contrarywind:Android-PickerView:4.1.8'
+    //ORM数据库——LitePal
+    implementation 'org.litepal.android:java:3.0.0'
+    //第三方饼状图库
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    //百度地图sdk
+    implementation files("libs/BaiduLBS_Android.jar")
+    //第三方侧滑删除库
+    implementation 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+}
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.terminal_work.app.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/mFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0">
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/select_radiobutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom">
+        <RadioButton
+            android:id="@+id/home_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/homechange"
+            android:button="@null"
+            android:text="首页"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@drawable/text_color_change"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/bill_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/billchange"
+            android:button="@null"
+            android:text="账单"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@drawable/text_color_change"/>
+        <RadioButton
+            android:id="@+id/add_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_add_circle_black_24dp"
+            android:button="@null"
+            android:layout_weight="1" />
+        <RadioButton
+            android:id="@+id/wish_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/wishchange"
+            android:gravity="center"
+            android:text="心愿"
+            android:textColor="@drawable/text_color_change"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/table_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/tablechange"
+            android:button="@null"
+            android:text="报表"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@drawable/text_color_change"/>
+    </RadioGroup>
+
+</LinearLayout>

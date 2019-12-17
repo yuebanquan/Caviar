@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/debit_card"
+        android:title="借记卡" />
+    <item android:id="@+id/credit_card"
+        android:title="信用卡" />
+    <item android:id="@+id/other"
+        android:title="其他" />
+</menu>

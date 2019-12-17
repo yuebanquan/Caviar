@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:background="@drawable/add_background"
+    android:orientation="vertical">
+
+    <!--占位-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"/>
+
+    <Button
+        android:id="@+id/button_money"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#FF9900"
+        android:text="记一笔"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+
+    <!--占位-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/button_asset"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#FF9900"
+        android:text="记资产"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <!--占位-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/button_wish"
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#FF9900"
+        android:text="记心愿"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <!--占位-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"/>
+
+
+</LinearLayout>

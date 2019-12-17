@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.Add_Money_Activity"
+    android:orientation="vertical">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/pay_button"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line_block"
+            android:button="@null"
+            android:gravity="center"
+            android:text="支出"
+            android:textColor="@drawable/pay_income_change"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/income_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="收入"
+            android:textStyle="bold"
+            android:textColor="@drawable/pay_income_change"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/line_block"/>
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

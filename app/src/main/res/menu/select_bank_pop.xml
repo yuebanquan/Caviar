@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/icbc"
+        android:title="工商银行"
+        android:icon="@drawable/icbc"/>
+    <item android:id="@+id/spdb"
+        android:title="浦发银行"
+        android:icon="@drawable/spdb"/>
+    <item android:id="@+id/cmb"
+        android:title="招商银行"
+        android:icon="@drawable/cmb"/>
+    <item android:id="@+id/bcm"
+        android:title="交通银行"
+        android:icon="@drawable/bcm"/>
+    <item android:id="@+id/ccb"
+        android:title="建设银行"
+        android:icon="@drawable/ccb"/>
+    <item android:id="@+id/boc"
+        android:title="中国银行"
+        android:icon="@drawable/boc"/>
+    <item android:id="@+id/abc"
+        android:title="农业银行"
+        android:icon="@drawable/abc"/>
+    <item android:id="@+id/wechat"
+        android:title="微信"
+        android:icon="@drawable/wechat"/>
+    <item android:id="@+id/alipay"
+        android:title="支付宝"
+        android:icon="@drawable/alipay"/>
+</menu>

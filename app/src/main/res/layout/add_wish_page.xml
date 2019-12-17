@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/write_wish"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:columnCount="3"
+        android:rowCount="8">
+        <!--占位-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="30"
+            android:layout_columnSpan="3"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="7"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1.7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="0.5"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:text="我的心愿是"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="7"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1.7" />
+
+        <EditText
+            android:id="@+id/write_wish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="0.5"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/line_block"
+            android:hint="请写下你的心愿"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="0.5"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:text="我的心愿预算"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/wish_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="0.4"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/line_block"
+            android:hint="实现心愿所需的金额"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/t_WishMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="0.5"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:text="我的心愿实现月数"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/b_WishMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="0.3"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:background="#ffff"
+            android:gravity="left|center"
+            android:text="选择所需的月份数▼"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/next_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/pay_income_state_pressed"
+            android:text="下一步"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="tips：每个月大概需要存——"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/moneyEveryMouth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="占位"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:text="看看大家的心愿"
+            android:textColor="#666666"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false">
+
+            <Button
+                android:id="@+id/otherWish1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:text="来一场旅行"
+                app:layout_constraintBaseline_toBaselineOf="@+id/otherWish2"
+                app:layout_constraintEnd_toStartOf="@+id/otherWish2" />
+
+            <Button
+                android:id="@+id/otherWish2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="换一部新手机"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.377" />
+
+            <Button
+                android:id="@+id/otherWish3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:text="送TA一份礼物"
+                app:layout_constraintBaseline_toBaselineOf="@+id/otherWish2"
+                app:layout_constraintStart_toEndOf="@+id/otherWish2" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

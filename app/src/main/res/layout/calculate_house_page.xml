@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#FF9900"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_home_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="房贷计算器"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/one_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="商业贷"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@drawable/text_color_change2"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/two_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="公积金贷"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@drawable/text_color_change2"
+                />
+            <RadioButton
+                android:id="@+id/three_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="组合贷"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@drawable/text_color_change2"/>
+            <RadioButton
+                android:id="@+id/four_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="发现"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@drawable/text_color_change2"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/mFragment3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</LinearLayout>

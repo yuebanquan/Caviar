@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:text="常用币种"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#330000"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:background="#FF9900"/>
+
+    <ListView
+        android:layout_marginTop="8dp"
+        android:id="@+id/exchange_rate_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="#FF9900"
+        android:dividerHeight="3sp"
+        android:layout_weight="1.8">
+        <!--android:dividerHeight="5sp"用来改变分割线粗细-->
+    </ListView>
+
+</LinearLayout>
